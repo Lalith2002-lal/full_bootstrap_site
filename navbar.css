@@ -1,0 +1,170 @@
+/* Css for the toggle menu section */
+.offcanvas-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .navbar-nav .nav-item a {
+    transition: color 0.1s ease-in-out;
+  }
+
+  .offcanvas.show .navbar-nav .nav-item a {
+    color: #111 !important;
+  }
+
+  .menu-top {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .menu-body {
+    gap: 24px;
+  }
+
+  .menu-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .footer-description {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 74%;
+  }
+
+  .footer-contact-social {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .menu-top .dropdown-menu {
+    background: transparent;
+    border: none;
+  }
+
+  .footer-bottom {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .menu-top .header-main .header-items::after{
+    content: "";
+    width: 0%;
+    height: 1px;
+    background: #c1c1c1;
+    display: block;
+    margin: auto;
+    transition: .5s;
+    margin-top: 10px;
+    transition: all .8s ease;
+  }
+  
+  .offcanvas-body{
+    background-color:#FAF2E9 ;
+}
+.offcanvas.offcanvas-start{
+  width: 100%;
+}
+.offcanvas-body .header-main:hover .header-items::after{
+    width: 100%;
+}
+.offcanvas-body .nav-text{
+  color: #111;
+}
+  /* Css for the toggle menu section ends */
+
+  /* Mediaquery for the navbar */
+  @media only screen and (min-width: 990px) {
+    /* Navbar Toggle */
+    .btn-close{
+        display: none;
+    }
+    .offcanvas-start{
+        display: none;
+    }
+    /* Navbar Toggle ends */
+  }
+
+/* As per Bootstrap Grid system */
+  
+/* Extra small: <576px */
+@media screen and (max-width: 575px) {
+         
+    /* navbar MQ */
+    .offcanvas.offcanvas-start{
+        width: 100%;
+    }
+    .nav-text{
+        color: #111;
+    }
+    .arrow{
+        color: #111;
+    }
+    .navbar .product-icon:hover .arrow,
+    .navbar .product-icon:hover .nav-text {
+        color: #111;
+    }
+
+    .nav-content{
+        display: none;
+    }
+   
+    /* navbar MQ ends */
+
+  }
+  
+  /* Small: ≥576px */
+  @media screen and (min-width: 576px) {
+    
+    /* Navbar MQ */
+    
+    .nav-content{
+        display: none;
+    }
+    .offcanvas-body .nav-text{
+        color: #111;
+    }
+    .offcanvas-body .arrow{
+        color: #111;
+    }
+    .navbar .offcanvas-body .product-icon:hover .arrow,
+    .navbar .offcanvas-body .product-icon:hover .nav-text {
+        color: #111;
+    }
+    /* Navbar MQ ends */
+  }
+  
+  /* Medium: ≥769px */
+  @media screen and (min-width: 769px) {
+
+    
+  }
+  
+  /* Large: ≥992px */
+  @media screen and (min-width: 992px) {
+    /* Navbar MQ */
+    .nav-content{
+        display: block;
+    }
+    /* Navbar MQ ends */
+    
+  }
+  
+  /* X-Large: ≥1200px */
+  @media screen and (min-width: 1200px) {
+    
+
+  }
+  
+  /* XX-Large: ≥1400px */
+  @media screen and (min-width: 1400px) {
+   
+  }
+ 
+/* Mediaquery for all ends*/
+
+/* Css for the home page  starts*/

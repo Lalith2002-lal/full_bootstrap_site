@@ -1,0 +1,671 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="dr_coffee_f11_plus.css">
+  <title>WFM Steam Pro</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!-- Include Font Awesome via CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+</head>
+
+<body>
+
+  <!--Nav Starts-->
+  <nav class="navbar navbar-expand-lg  ">
+    <div class="container">
+
+      <!-- Logo on the left for both desktop and mobile -->
+      <a class="navbar-brand" href="homepage.html">
+        <img class="main-logo" src="assets/png/Dropbox-Coffee-logo-1 3.png" alt="">
+      </a>
+
+
+
+      <!-- Off-canvas toggler button on the right for mobile -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <!-- Replace the default toggler icon with the provided SVG -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="23" viewBox="0 0 28 23" fill="none">
+          <path d="M24 5.5L2 5.5" stroke="#3A3A3A" stroke-width="1.5" stroke-linecap="round" />
+          <path d="M24 17.5L2 17.5" stroke="#3A3A3A" stroke-width="1.5" stroke-linecap="round" />
+        </svg>
+      </button>
+
+      <!-- Off-canvas navigation -->
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="navbarNav" aria-labelledby="navbarNavLabel">
+
+        <div class="offcanvas-body">
+          <div class="menu-top">
+            <!-- Navigation links -->
+            <ul class="navbar-nav menu-body">
+              <li class="nav-item header-main">
+                <a class="nav-link header-items nav-text caudex" href="about-us.html">ABOUT US</a>
+              </li>
+              <li class="nav-item dropdown product-icon header-main">
+                <a class="nav-link header-items " href="#" id="submenuDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  <span class="nav-text caudex">PRODUCTS</span> &nbsp;<i class='fas fa-angle-down arrow '
+                    style='font-size:16px'></i>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="submenuDropdown">
+                  <a class="dropdown-item" href="products.html" style="color:#111;"><span
+                      class="dropdown-text caudex">COFFEE FOR BUSINESS</span></a>
+                  <a class="dropdown-item" href="#" style="color:#111;"><span class="dropdown-text caudex">CAFÉ
+                      SOLUTIONS</span></a>
+                  <a class="dropdown-item" href="#" style="color:#111;"><span class="dropdown-text caudex">COFFEE
+                      BEANS</span></a>
+                </div>
+              </li>
+              <li class="nav-item header-main">
+                <a class="nav-link header-items nav-text caudex" href="blog.html">BLOGS</a>
+              </li>
+              <li class="nav-item header-main">
+                <a class="nav-link header-items nav-text caudex" href="contact-us.php">CONTACT US</a>
+              </li>
+            </ul>
+            <!-- Close button -->
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-footer">
+            <div class="menu-bottom">
+              <div class="footer-description">
+                <h6> <b> How can we help you? </b></h6>
+                <p><span class="menu-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </span></p>
+              </div>
+              <div class="footer-contact-social">
+                <p class="footer-bottom"><img src="assets/icons/black/Call - 24px.svg" alt=""><span
+                    class="footer-contact menu-p">+61 418 345 578</span></p>
+                <p class="footer-bottom"><img src="assets/icons/black/Mail - 24px.svg" alt=""><span
+                    class="footer-email menu-p">info@dropboxcoffee.com.au</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Navigation links on the left -->
+      <div class="navbar-nav nav-content" id="navbarNav">
+        <ul class="navbar-nav toggle-down-links d-md-flex align-items-md-center">
+          <li class="nav-item header-main">
+            <a class="nav-link header-items nav-text caudex" href="about-us.html">ABOUT US</a>
+          </li>
+          <li class="nav-item dropdown product-icon header-main">
+            <a class="nav-link header-items " href="#" id="submenuDropdown" role="button" data-bs-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <span class="nav-text caudex">PRODUCTS</span> &nbsp;<i class='fas fa-angle-down arrow '
+                style='font-size:16px'></i>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="submenuDropdown">
+              <a class="dropdown-item caudex" href="products.html"><span class="dropdown-text">COFFEE FOR
+                  BUISNESS</span></a>
+              <a class="dropdown-item caudex" href="#"><span class="dropdown-text">CAFÉ
+                  SOLUTIONS</span></a>
+              <a class="dropdown-item caudex" href="#"><span class="dropdown-text">COFFEE
+                  BEANS</span></a>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Navigation links on the right -->
+      <div class="navbar-nav nav-content justify-content-end" id="navbarNav">
+        <ul class="navbar-nav d-md-flex align-items-md-center">
+          <li class="nav-item header-main">
+            <a class="nav-link header-items nav-text caudex" href="blog.html">BLOGS</a>
+          </li>
+          <li class="nav-item header-main">
+            <a class="nav-link header-items nav-text caudex" href="contact-us.php">CONTACT US</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--Nav ends-->
+
+
+
+  <!-- Product description end -->
+
+  <section class="product-display">
+    <div class="container demo-container padding-TB-64 padding-TB-992-96">
+      <div class="row demo-row">
+
+        <!--Card left starts-->
+        <div class="col-lg-12 col-xl-7 card-left-container">
+          <div class="b-link col-lg-12 col-md-12">
+            <a href="homepage.html">HOME</a>
+            <span>/</span>
+            <a href="about-us.html">ABOUT US </a>
+            <span>/</span>
+            <a href="products.html">COFFEE FOR BUSINESS</a>
+            <span>/</span>
+            <a href="wfm-steam-pro.html">WMF Steam Pro</a>
+          </div>
+          <div class="product-imgs d-lg-flex justify-content-lg-between justify-content-xl-start">
+            <div class="img-select col-lg-2 col-md-12">
+              <div class="img-item col" onclick="focusItem(this)">
+                <a href="#" data-id="1">
+                  <img src="assets/images/Products/WFM Steam Pro.png" alt="shoe image">
+                </a>
+              </div>
+              <div class="img-item col" onclick="focusItem(this)">
+                <a href="#" data-id="2">
+                  <img src="assets/images/Products/WFM Steam Pro.png" alt="shoe image">
+                </a>
+              </div>
+              <div class="img-item col" onclick="focusItem(this)">
+                <a href="#" data-id="3">
+                  <img src="assets/images/Products/WFM Steam Pro.png" alt="shoe image">
+                </a>
+              </div>
+              <div class="img-item col focus" onclick="focusItem(this)">
+                <a href="#" data-id="4">
+                  <img src="assets/images/Products/WFM Steam Pro.png" alt="shoe image">
+                </a>
+              </div>
+            </div>
+            <div class="img-display col-lg-9 col-md-12 pt-1">
+              <div class="img-showcase" style="transform: translateX(-2106px);">
+                <img src="assets/images/Products/WFM Steam Pro.png" alt="shoe image">
+                <img src="assets/images/Products/WFM Steam Pro.png" alt="shoe image">
+                <img src="assets/images/Products/WFM Steam Pro.png" alt="shoe image">
+                <img src="assets/images/Products/WFM Steam Pro.png" alt="shoe image">
+              </div>
+              <div class="over-text">
+                <div class="text"><img src="assets/icons/black/maximize-circle.png" alt=""></div>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-xl-11 col-lg-12 left-bottom-tags d-lg-flex  justify-content-lg-between">
+            <p class="d-flex align-items-center mb-0 menu-p"><img class="me-1" src="assets/icons/black/user - 12px.svg"
+                alt=""> 1 - 50 people </p>
+            <p class="d-flex align-items-center mb-0 menu-p"><img class="me-1" src="assets/icons/black/cup - 12px.svg"
+                alt=""> Advise daily output 100 cups</p>
+          </div>
+        </div>
+        <!-- card left-ends -->
+        <!--Right content-->
+        <div class="col-lg-12 col-xl-5 product-description f11-description">
+          <div class="product-right-header">
+            <h1>WMF Steam Pro</h1>
+            <p class="product-right-description">WMF Steam Pro are small in size but big on flavor, with DR.COFFEE
+              innovative fresh brewing technology. These stylish compact machines deliver a range of high quality, rich
+              tasting coffee that easily rival traditional bar machines you would find in many coffee shops.</p>
+          </div>
+          <div class="show-inner">
+            <button class="w3-bar-item w3-button caudex active" onclick="openCity('features')">Features</button>
+            <button class="w3-bar-item w3-button caudex" onclick="openCity('specifications')">Specifications</button>
+
+            <div id="features" class="w3-container city" style="display: block;">
+
+              <ul class="box-description wmf-box-description">
+                <li>The pioneering brewing system can meet your need for both non-pressurised regular coffee and
+                  pressurised espresso.</li>
+                <li>The innovative grinder with ceramic flat-type blades accurately grind the coffee beans into
+                  unified-size powder, bringing out the unique flavour of the coffee.</li>
+                <li> The 7” touch panel is easy to use, direct and efficient, by which customised coffee is just
+                  at your fingertips.</li>
+                <li>The combination of enlarged bean hopper, water tank and grounds container can easily cope
+                  with peak hour demand.</li>
+                <li>Different ways of water supply and self-clean mechanism can deal with any occasions.</li>
+              </ul>
+
+            </div>
+
+            <div id="specifications" class="w3-container city" style="display: none;">
+
+              <ul class="box-description wmf-box-description">
+                <li>Different ways of water supply and self-clean mechanism can deal with any occasions.</li>
+                <li>The pioneering brewing system can meet your need for both non-pressurised regular coffee and
+                  pressurised espresso.</li>
+                <li>The combination of enlarged bean hopper, water tank and grounds container can easily cope
+                  with peak hour demand.</li>
+                <li>The innovative grinder with ceramic flat-type blades accurately grind the coffee beans into
+                  unified-size powder, bringing out the unique flavour of the coffee.</li>
+                <li> The 7” touch panel is easy to use, direct and efficient, by which customised coffee is just
+                  at your fingertips.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!--Right content ends-->
+      </div>
+    </div>
+
+
+
+
+
+
+  </section>
+
+
+  <!-- related product page section start -->
+
+  <div class="container ">
+    <div class="row">
+      <div class="full-products home-pad-tb">
+        <div>
+          <p class="products-starting-text ">COFFEE FOR BUSINESS</p>
+
+          <h1 class="mb-4 related-products-heading">Related Products</h1>
+          <p class="mb-4">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in tincidunt tellus. <br>Fusce tincidunt
+            felis non lectus fringilla, a vestibulum quam faucibus.
+          </p>
+        </div>
+
+
+        <div class="container">
+          <div class="row">
+
+
+            <div class="row related-product-row p-0">
+              <div class="col">
+                <div class="animation-1">
+                  <img src="assets/images/Products/dr coffee 2.png" alt="Avatar" class="image">
+                  <a href="dr-coffee-f11-plus.html">
+                    <div class="overlay">
+                      <div class="text">
+                        <img class="ico-01" src="assets/icons/black/vuesax/linear/arrow-right-new.svg" alt="">
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="advise">
+                  <h4 class="mb-4 alg-1">Dr Coffee F11 Plus</h4>
+                  <hr class="hr-2">
+                  <p class="alg-1 d-flex justify-content-center"><img class="me-2"
+                      src="assets/icons/black/cup - 12px.svg" alt="">Advise daily output 100 cups</p>
+
+                </div>
+              </div>
+              <div class="col">
+                <div class="animation-1">
+                  <img src="assets/images/Products/WFM Steam Pro.png" alt="Avatar" class="image">
+                  <a href="wfm-steam-pro.html">
+                    <div class="overlay">
+                      <div class="text">
+                        <img class="ico-01" src="assets/icons/black/vuesax/linear/arrow-right-new.svg" alt="">
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="advise">
+                  <h4 class="mb-4 alg-1">WFM Steam Pro</h4>
+                  <hr class="hr-2">
+                  <p class="alg-1 d-flex justify-content-center"> <img class="me-2
+        " src="assets/icons/black/cup - 12px.svg" alt="">Advise daily output 100 cups</p>
+
+                </div>
+              </div>
+              <div class="col">
+                <div class="animation-1">
+                  <img src="assets/images/Products/wmf 1100 2.png" alt="Avatar" class="image">
+                  <a href="wmf-1100.html">
+                    <div class="overlay">
+                      <div class="text">
+                        <img class="ico-01" src="assets/icons/black/vuesax/linear/arrow-right-new.svg" alt="">
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="advise">
+                  <h4 class="mb-4 alg-1">WMF 1100</h4>
+                  <hr class="hr-2">
+                  <p class="alg-1 d-flex justify-content-center"> <img class="me-2"
+                      src="assets/icons/black/cup - 12px.svg" alt="">Advise daily output 100 cups</p>
+
+                </div>
+              </div>
+              <div class="col">
+                <div class="animation-1">
+                  <img src="assets/images/Products/dr coffee 2.png" alt="Avatar" class="image">
+                  <a href="dr-coffee-f11-plus.html">
+                    <div class="overlay">
+                      <div class="text">
+                        <img class="ico-01" src="assets/icons/black/vuesax/linear/arrow-right-new.svg" alt="">
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="advise">
+                  <h4 class="mb-4 alg-1">Dr Coffee F11 Plus</h4>
+                  <hr class="hr-2">
+                  <p class="alg-1 d-flex justify-content-center"> <img class="me-2"
+                      src="assets/icons/black/cup - 12px.svg" alt="">Advise daily output 100 cups</p>
+
+                </div>
+
+              </div>
+
+            </div>
+            <div class="row">
+              <section class="mobile-view">
+                <div class="container">
+                  <div class="row product-mobile-view">
+                    <div id="carousel1" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+                      <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carousel1" data-bs-slide-to="0" class="active"
+                          aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carousel1" data-bs-slide-to="1"
+                          aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carousel1" data-bs-slide-to="2"
+                          aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carousel1" data-bs-slide-to="3"
+                          aria-label="Slide 4"></button>
+
+                      </div>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <div class="col">
+                            <div class="animation-1">
+                              <img src="assets/images/Products/dr coffee 2.png" alt="Avatar" class="image">
+                              <a href="dr-coffee-f11-plus.html">
+                                <div class="overlay">
+                                  <div class="text">
+                                    <img class="ico-01" src="assets/icons/black/vuesax/linear/arrow-right-new.svg"
+                                      alt="">
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                            <div class="advise">
+                              <h4 class="mb-4 alg-1">Dr Coffee F11 Plus</h4>
+                              <hr class="hr-2">
+                              <p class="alg-1 d-flex justify-content-center align-items-center"><img class="cup-1 me-2"
+                                  src="assets/icons/black/cup - 12px.svg">Advise daily output 100 cups</p>
+
+                            </div>
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <div class="col">
+                            <div class="animation-1">
+                              <img src="assets/images/Products/WFM Steam Pro.png" alt="Avatar" class="image"
+                                height="200px">
+                              <a href="wfm-steam-pro.html">
+                                <div class="overlay">
+                                  <div class="text">
+                                    <img class="ico-01" src="assets/icons/black/vuesax/linear/arrow-right-new.svg"
+                                      alt="">
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                            <div class="advise">
+                              <h4 class="mb-4 alg-1">WFM Steam Pro</h4>
+                              <hr class="hr-2">
+                              <p class="alg-1 d-flex justify-content-center align-items-center"><img class="cup-1 me-2"
+                                  src="assets/icons/black/cup - 12px.svg">Advise daily output 100 cups</p>
+
+                            </div>
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <div class="col">
+                            <div class="animation-1">
+                              <img src="assets/images/Products/wmf 1100 2.png" alt="Avatar" class="image">
+                              <a href="wmf-1100.html">
+                                <div class="overlay">
+                                  <div class="text">
+                                    <img class="ico-01" src="assets/icons/black/vuesax/linear/arrow-right-new.svg"
+                                      alt="">
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                            <div class="advise">
+                              <h4 class="mb-4 alg-1">WMF 1100</h4>
+                              <hr class="hr-2">
+                              <p class="alg-1 d-flex justify-content-center align-items-center"><img class="cup-1 me-2"
+                                  src="assets/icons/black/cup - 12px.svg">Advise daily output 100 cups</p>
+
+                            </div>
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <div class="col">
+                            <div class="animation-1">
+                              <img src="assets/images/Products/dr coffee 2.png" alt="Avatar" class="image">
+                              <a href="dr-coffee-f11-plus.html">
+                                <div class="overlay">
+                                  <div class="text">
+                                    <img class="ico-01" src="assets/icons/black/vuesax/linear/arrow-right-new.svg"
+                                      alt="">
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                            <div class="advise">
+                              <h4 class="mb-4 alg-1">Dr Coffee F11 Plus</h4>
+                              <hr class="hr-2">
+                              <p class="alg-1 d-flex justify-content-center align-items-center"><img class="cup-1 me-2"
+                                  src="assets/icons/black/cup - 12px.svg">Advise daily output 100 cups</p>
+
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- related product page section ends -->
+
+  <!--Demo product section-->
+  <section class="product-display">
+    <div class="container demo-container">
+      <div class="row demo-row">
+        <div class="col-md-7 products">
+          <div class="col-md-4 small-product"></div>
+          <div class="col-md-8 large-product"></div>
+        </div>
+        <div class="col-md-5 product-description">
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Demo product section ends-->
+  <!--Footer Starts-->
+  <section class="total-footer">
+    <div class="container p-md-0 footer-container">
+
+      <footer class="text-white text-center text-lg-start total-footer padding-TB-large padding-TB padding-TB-sm">
+        <!-- Grid container -->
+        <div class="container-fluid p-0 m-0">
+          <!--Grid row-->
+          <div class="row justify-content-lg-between">
+            <!--Grid column-->
+            <div class="col-lg-4 col-md-12 mb-4 mb-md-0 d-md-flex text-start flex-sm-column  footer-top">
+              <a href="homepage.html"><img src="assets/png/Dropbox-Coffee-logo-white.png" alt=""></a>
+              <p class="footer-para text-sm-start">
+                As a premier supplier, we offer top-tier coffee machines and comprehensive technical support across
+                various brands. Choose in-house training or sessions at our dedicated center.
+              </p>
+
+              <div class="footer-social d-md-flex">
+                <p class="footer-follow">
+                  Follow us for more updates
+                </p>
+                <p class="ms-md-5 ms-lg-4 footer-social-links">
+                  <img src="assets/icons/white/vuesax/facebook - 24px.svg" alt="">
+                  <img class="ms-md-2 ms-lg-0" src="assets/icons/white/vuesax/instagram  - 24px.svg" alt="">
+                  <img class="ms-md-2 ms-lg-0" src="assets/icons/white/vuesax/youtube - 24px.svg" alt="">
+                </p>
+              </div>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-3 col-xl-3 col-md-5 mb-4 mb-md-0 text-start">
+              <h5 class="text-uppercase mb-4 pb-1 footer-heading">Subscribe to our Newsletter</h5>
+              <p class="footer-para">Caffeine Chronicles: Brews &amp; News Delivered Fresh to Your Inbox!</p>
+              <div class="form-outline mb-4 d-flex f-email">
+                <input class="footer-email" type="email" placeholder="Email Address">
+                <button class="d-flex align-items-center justify-content-center ms-xl-4 mt-3"><img
+                    class="footer-arrow-img" src="assets/icons/white/arrow right.svg" alt=""></button>
+              </div>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div
+              class=" col-xl-4 col-lg-5 align-items-end align-items-md-start align-items-lg-start col-md-7 footer-links-total col-md-6">
+              <div class="row text-sm-start">
+                <div class="col-md-3 col-4  footer-links">
+                  <ul class="nav flex-row flex-column text-white text-start">
+                    <li class="nav-item mb-4 text-white header-main"><a href="homepage.html"
+                        class="nav-link p-0 text-white header-items">ABOUT</a></li>
+                    <li class="nav-item mb-4 header-main"><a href="products.html"
+                        class="nav-link p-0 text-white header-items">PRODUCTS</a></li>
+                    <li class="nav-item mb-4 header-main"><a href="blog.html"
+                        class="nav-link p-0 text-white header-items">BLOGS</a></li>
+                  </ul>
+                </div>
+                <div
+                  class="col-md-6 col-8 footer-links d-lg-flex align-lg-center justify-content-lg-center d-md-flex align-md-center justify-content-md-center">
+                  <ul class="nav flex-column text-start">
+                    <li class="nav-item mb-4 header-main"><a href="#" class="nav-link p-0 text-white header-items">PICK
+                        YOUR BEAN</a></li>
+                    <li class="nav-item mb-4 header-main"><a href="#"
+                        class="nav-link p-0 text-white header-items">ESTIMATE PRICE</a></li>
+                    <li class="nav-item mb-4 header-main"><a href="contact-us.php"
+                        class="nav-link p-0 text-white header-items">CONTACT US
+                      </a></li>
+                  </ul>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-3  footer-links">
+                  <ul class="nav flex-column text-start">
+                    <li class="nav-item mb-4 header-main"><a href="#"
+                        class="nav-link p-0 text-white header-items">TERMS</a></li>
+                    <li class="nav-item mb-4 header-main"><a href="#"
+                        class="nav-link p-0 text-white header-items">PRIVACY</a></li>
+                    <li class="nav-item mb-4 header-main"><a href="#"
+                        class="nav-link p-0 text-white header-items">SUPPORT</a></li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="row end text-start">
+          <div class="col-md-12 col-lg-6 text-md-left text-md-left d-md-flex flex-md-row d-flex flex-column cont ">
+            <p class="mb-md-3 footer-para col-md-4 text-md-start col-12"> <img class="footer-contact pe-2"
+                src="assets/icons/white/Call - 14px.svg" alt="">+61 418 345 578</p>
+            <p class="mb-md-3 footer-para col-md-6 col-12 "><img class="footer-email pe-2"
+                src="assets/icons/white/sms - 14px.svg" alt="">info@dropboxcoffee.com.au</p>
+          </div>
+          <div class="col-md-12 col-lg-6 text-md-start text-lg-end rights">
+            <p class="footer-follow caudex">©2023 DROPBOX COFFEE,ALL RIGHTS RESERVED.</p>
+          </div>
+        </div>
+        <!-- Copyright -->
+      </footer>
+
+    </div>
+  </section>
+  <!-- End of .container -->
+
+  <!--Footer Ends-->
+
+  <!-- singleproduct page script -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="assets/js/singleProduct.js"></script>
+
+  <script>
+    // Script for the sliding image on the product description 
+    change_image = (img) => {
+      const contatier = document.getElementById('product-img');
+      contatier.src = img.src
+    }
+    const imgs = document.querySelectorAll('.img-select a');
+    const imgBtns = [...imgs];
+    let imgId = 1;
+
+    imgBtns.forEach((imgItem) => {
+      imgItem.addEventListener('click', (event) => {
+        event.preventDefault();
+        imgId = imgItem.dataset.id;
+        slideImage();
+      });
+    });
+
+    function slideImage() {
+      const displayWidth = document.querySelector('.img-showcase img:first-child').clientWidth;
+
+      document.querySelector('.img-showcase').style.transform = `translateX(${- (imgId - 1) * displayWidth}px)`;
+    }
+
+    slideImage();
+
+    window.addEventListener('resize', slideImage);
+
+    // For the Features and specification button 
+    function openCity(cityName) {
+      var i;
+      var x = document.getElementsByClassName("city");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      document.getElementById(cityName).style.display = "block";
+
+      const buttons = document.querySelectorAll('.w3-button');
+      buttons.forEach(function (button) {
+        button.classList.remove('active');
+      })
+      event.currentTarget.classList.add('active')
+    }
+
+    // For the focus function on the class="img-select";
+    function focusItem(element) {
+      // Remove 'focus' class 
+      var imgItems = document.querySelectorAll('.img-select .img-item');
+      imgItems.forEach(function (item) {
+        item.classList.remove('focus');
+      });
+      // Add 'focus' class 
+      element.classList.add('focus');
+    }
+
+  </script>
+
+
+
+
+  <style>
+
+  </style>
+</body>
+
+</html>
